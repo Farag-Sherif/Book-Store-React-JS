@@ -1,0 +1,38 @@
+.shop {
+  .landing {
+    height: calc(100vh - 9rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title {
+      width: 75rem;
+      text-align: center;
+      color: white;
+      h1 {
+        font-size: 5rem;
+        text-align: center;
+        width: fit-content;
+      }
+      h1:last-child {
+        font-size: 4rem;
+        margin: 3rem auto 0;
+        padding-bottom: 1rem;
+        border-bottom: 3px dashed white;
+      }
+    }
+  }
+  .products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .loading-more {
+    color: white;
+    margin: 3rem auto 0;
+    padding: 1.5rem 2.5rem;
+    background-color: black;
+    border-radius: 0;
+  }
+}

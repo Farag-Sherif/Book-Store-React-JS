@@ -1,0 +1,35 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 9rem);
+
+  .logForm {
+    padding: 2rem;
+    background-color: #eeeeee35;
+    color: #eee;
+    border-radius: 2rem;
+    width: 45rem;
+
+    label {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      font-size: 1.6rem;
+      border: 2px solid transparent;
+      outline: none;
+    }
+    .errorMessage {
+      font-size: 1.4rem;
+      color: #ff2121;
+      margin: 1rem 0 0;
+    }
+  }
+}

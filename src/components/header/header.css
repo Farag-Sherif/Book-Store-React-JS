@@ -1,0 +1,76 @@
+.hover {
+  transition: 0.5s;
+}
+.hover:hover {
+  color: #777;
+}
+.smallSize {
+  display: none;
+  position: relative;
+  z-index: 999;
+  .fa-bars {
+    font-size: 3.5rem;
+    border: 3px solid transparent;
+    padding: 0.5rem 1rem;
+  }
+  .fa-bars:hover {
+    border-color: white;
+  }
+  .list {
+    font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 5rem 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+    .fa-xmark {
+      font-size: 4rem;
+      display: block;
+      text-align: right;
+      margin: 0 3rem 3rem auto;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      border: 3px solid transparent;
+    }
+    .fa-xmark:hover {
+      border-color: white;
+    }
+
+    .items {
+      padding: 1rem;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+    .registerButtons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .largeSize {
+    display: none;
+  }
+  .smallSize {
+    display: flex;
+  }
+}
+

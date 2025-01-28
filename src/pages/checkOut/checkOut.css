@@ -1,0 +1,158 @@
+.checkOut {
+  background-color: white;
+  padding-top: 5rem;
+  .container {
+    .header {
+      background: url("../../image/checkOut.avif") no-repeat center center/cover;
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      text-align: center;
+      border-radius: 2rem;
+      position: relative;
+      z-index: 0;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+      
+      h2 {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .formContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 0;
+      gap: 2rem;
+      .products {
+        border-radius: 1.5rem;
+        border: 2px solid #ccc;
+        overflow: hidden;
+        width: 100%;
+        .title,
+        .product {
+          color: #333;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #ccc;
+          gap: 0;
+          .image {
+            width: 8rem;
+            height: 10rem;
+          }
+          h3 {
+            padding: 1rem;
+            font-size: 1.6rem;
+            width: calc(100% / 4);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          h3:first-child {
+            width: 7rem;
+          }
+          h3:nth-child(3) {
+            width: calc(50% - 7rem);
+          }
+        }
+        .title {
+          h3 {
+            background-color: #ccc;
+          }
+          .image {
+            width: 8rem;
+            height: fit-content;
+          }
+        }
+      }
+      .form {
+        width: 100%;
+
+        label {
+          display: block;
+          font-size: 1.6rem;
+          margin-bottom: 1rem;
+          margin-top: 2rem;
+          color: #333;
+        }
+
+        input {
+          width: 100%;
+          padding: 1.5rem 2rem;
+          border-radius: 0.6rem;
+          font-size: 1.6rem;
+          border: 2px solid #ccc;
+          outline: none;
+          -webkit-border-radius: 0.6rem;
+          -moz-border-radius: 0.6rem;
+          -ms-border-radius: 0.6rem;
+          -o-border-radius: 0.6rem;
+        }
+        .errorMessage {
+          font-size: 1.4rem;
+          color: #ff2121;
+          margin: 1rem 0 0;
+        }
+      }
+      .button {
+        border-color: #333;
+        width: 75%;
+        margin: 2rem auto;
+      }
+      .button:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+    @media (max-width: 992px) {
+      .formContainer {
+        flex-direction: column-reverse;
+      }
+    }
+    @media (max-width: 567px) {
+      .products {
+        .title {
+          display: none !important;
+        }
+        .product {
+          flex-direction: column;
+          h3 {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+.checkOut::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.489);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 2rem;
+}

@@ -1,0 +1,64 @@
+footer {
+  padding: 5rem 0;
+  background-color: #eee;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    .box {
+      color: black;
+      max-width: 100%;
+      width: 250px;
+      h3 {
+        font-size: 20px;
+        margin: 25px 0;
+        border-bottom: 3px dashed;
+        font-weight: 400;
+        width: fit-content;
+        text-transform: uppercase;
+      }
+      a {
+        color: black;
+        font-size: 1.6rem;
+        display: block;
+        margin: 1rem 0;
+        transition: 0.5s;
+        i {
+          margin-right: 1rem;
+        }
+      }
+      a:hover {
+        color: #333;
+      }
+      .facebook:hover {
+        color: #0d69d5;
+      }
+      .linkedin:hover {
+        color: blue;
+      }
+      .instagram:hover {
+        color: #ac6eea;
+      }
+      .twitter:hover {
+        color: #00acee;
+      }
+      .youtube:hover {
+        color: #ff0000;
+      }
+      @media (max-width: 767px) {
+        h3 {
+          margin: 25px auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .info {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+/* end contact */
