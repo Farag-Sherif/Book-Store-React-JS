@@ -26,7 +26,7 @@ export default function LogInPage() {
     // when start submit the loading will be true to turn on Loading
     setLoading(true);
     try {
-      let res = await axios.post("http://localhost:5000/api/signin", {
+      let res = await axios.post("https://realestate-one-black.vercel.app/api/signin", {
         email: email,
         password: password,
       });
